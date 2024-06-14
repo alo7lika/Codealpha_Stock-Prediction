@@ -13,16 +13,20 @@ The project utilizes historical stock price data for Apple Inc. (AAPL) sourced f
 Data preprocessing involves:
 
 Filtering the relevant 'Close' price column.
+
 Scaling the data to a range between 0 and 1 using MinMaxScaler to improve model performance.
+
 Splitting the dataset into training and testing sets.
 # Model Building
 The LSTM model is built using the Keras library and consists of:
 
 Two LSTM layers with 50 units each.
-A Dense layer with 25 units.
-A final Dense layer with 1 unit for output.
-The model is compiled with the Adam optimizer and mean squared error as the loss function.
 
+A Dense layer with 25 units.
+
+A final Dense layer with 1 unit for output.
+
+The model is compiled with the Adam optimizer and mean squared error as the loss function.
 # Training and Prediction
 The model is trained on the training dataset, and predictions are made on the testing dataset. The training involves learning the patterns in the historical data to predict future stock prices.
 
@@ -34,7 +38,9 @@ This project demonstrates the effectiveness of LSTM networks in predicting stock
 
 # Requirements
 Python 3.x
+
 Jupyter Notebook
+
 Libraries: numpy, pandas, matplotlib, scikit-learn, keras, yfinance
 # Getting Started
 To run the project, clone the repository and execute the Jupyter Notebook provided. Ensure all required libraries are installed.
